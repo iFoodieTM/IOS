@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		57DB35DE23AEA7DC0055BA2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB35DD23AEA7DC0055BA2B /* AppDelegate.swift */; };
 		57DB35E023AEA7DC0055BA2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB35DF23AEA7DC0055BA2B /* SceneDelegate.swift */; };
-		57DB35E223AEA7DC0055BA2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB35E123AEA7DC0055BA2B /* ViewController.swift */; };
+		57DB35E223AEA7DC0055BA2B /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB35E123AEA7DC0055BA2B /* registerController.swift */; };
 		57DB35E523AEA7DC0055BA2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57DB35E323AEA7DC0055BA2B /* Main.storyboard */; };
 		57DB35E723AEA7DC0055BA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DB35E623AEA7DC0055BA2B /* Assets.xcassets */; };
 		57DB35EA23AEA7DC0055BA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57DB35E823AEA7DC0055BA2B /* LaunchScreen.storyboard */; };
+		57DD287E23CCF45300A593D1 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD287D23CCF45300A593D1 /* loginController.swift */; };
+		57DD288023CCF91D00A593D1 /* recoverPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD287F23CCF91D00A593D1 /* recoverPasswordController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57DB35DA23AEA7DC0055BA2B /* iFoodie_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFoodie_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DB35DD23AEA7DC0055BA2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57DB35DF23AEA7DC0055BA2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57DB35E123AEA7DC0055BA2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57DB35E123AEA7DC0055BA2B /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
 		57DB35E423AEA7DC0055BA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57DB35E623AEA7DC0055BA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57DB35E923AEA7DC0055BA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57DB35EB23AEA7DC0055BA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57DD287D23CCF45300A593D1 /* loginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
+		57DD287F23CCF91D00A593D1 /* recoverPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recoverPasswordController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				57DB35DD23AEA7DC0055BA2B /* AppDelegate.swift */,
 				57DB35DF23AEA7DC0055BA2B /* SceneDelegate.swift */,
-				57DB35E123AEA7DC0055BA2B /* ViewController.swift */,
+				57DB35E123AEA7DC0055BA2B /* registerController.swift */,
+				57DD287D23CCF45300A593D1 /* loginController.swift */,
 				57DB35E323AEA7DC0055BA2B /* Main.storyboard */,
+				57DD287F23CCF91D00A593D1 /* recoverPasswordController.swift */,
 				57DB35E623AEA7DC0055BA2B /* Assets.xcassets */,
 				57DB35E823AEA7DC0055BA2B /* LaunchScreen.storyboard */,
 				57DB35EB23AEA7DC0055BA2B /* Info.plist */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57DB35E223AEA7DC0055BA2B /* ViewController.swift in Sources */,
+				57DB35E223AEA7DC0055BA2B /* registerController.swift in Sources */,
+				57DD287E23CCF45300A593D1 /* loginController.swift in Sources */,
+				57DD288023CCF91D00A593D1 /* recoverPasswordController.swift in Sources */,
 				57DB35DE23AEA7DC0055BA2B /* AppDelegate.swift in Sources */,
 				57DB35E023AEA7DC0055BA2B /* SceneDelegate.swift in Sources */,
 			);

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iFoodie_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="loginController" customModule="iFoodie_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +52,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <state key="normal" title="Acceder"/>
                                         <connections>
+                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sm2-o4-kje"/>
                                             <segue destination="gHk-vV-Fbs" kind="show" id="u29-qL-8Aw"/>
                                         </connections>
                                     </button>
@@ -96,15 +97,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qq4-nG-jZ2"/>
+                    <connections>
+                        <outlet property="emailTF" destination="Ae9-xL-oar" id="jkP-7Q-I53"/>
+                        <outlet property="passwordTF" destination="Ivp-l4-Uee" id="16x-Fb-eev"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-797.10144927536237" y="172.76785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Controller-->
         <scene sceneID="JjL-Gb-wkL">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="kFu-7p-Ruh" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="kFu-7p-Ruh" customClass="RegisterController" customModule="iFoodie_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yz3-IT-b5Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,6 +172,10 @@
                                         <rect key="frame" x="0.0" y="703.33333333333337" width="350" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Continuar"/>
+                                        <connections>
+                                            <action selector="register:" destination="kFu-7p-Ruh" eventType="touchUpInside" id="qLV-S1-2Eb"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="ffx-at-mvQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -181,6 +191,12 @@
                         <viewLayoutGuide key="safeArea" id="K4R-WT-wKd"/>
                     </view>
                     <navigationItem key="navigationItem" id="06q-JY-A6T"/>
+                    <connections>
+                        <outlet property="emailTF" destination="4Mx-e2-g8D" id="Obn-9F-DLP"/>
+                        <outlet property="nameTF" destination="WMi-7h-6mq" id="o7a-h4-B7w"/>
+                        <outlet property="passwordTF" destination="elt-EM-cls" id="qLJ-sl-rMc"/>
+                        <outlet property="surnamesTF" destination="26X-Zk-jbw" id="Aqx-VC-Ioi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdT-iV-a20" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="843" y="149"/>
         </scene>
-        <!--View Controller-->
+        <!--Recover Password Controller-->
         <scene sceneID="Ffe-DR-iLj">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="eLO-2a-07y" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="eLO-2a-07y" customClass="recoverPasswordController" customModule="iFoodie_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4p3-yW-alb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,6 +326,10 @@
                                         <rect key="frame" x="0.0" y="382" width="350" height="118"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                         <state key="normal" title="Enviar"/>
+                                        <connections>
+                                            <action selector="recoverPassword:" destination="eLO-2a-07y" eventType="touchUpInside" id="0dy-Pw-y3E"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="yFV-yk-m4J"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -326,10 +346,13 @@
                         <viewLayoutGuide key="safeArea" id="0jx-Ps-kTW"/>
                     </view>
                     <navigationItem key="navigationItem" id="sWs-uQ-P2i"/>
+                    <connections>
+                        <outlet property="emailTF" destination="282-sx-udc" id="Avd-Ty-YCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oec-WZ-3br" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2.8985507246376816" y="855.80357142857144"/>
+            <point key="canvasLocation" x="-51" y="819"/>
         </scene>
     </scenes>
     <resources>
@@ -338,4 +361,7 @@
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yFV-yk-m4J"/>
+    </inferredMetricsTieBreakers>
 </document>
